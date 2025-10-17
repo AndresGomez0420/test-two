@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: db_test
+    environment:
+      POSTGRES_USER: andres
+      POSTGRES_PASSWORD: andres123
+      POSTGRES_DB: db_test_andres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+ 
+volumes:
+  postgres_data:
+    driver: local

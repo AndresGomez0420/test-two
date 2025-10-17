@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "217f435f-dae4-43eb-a749-5af5ade14888",
+		"name": "Developer APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21122812"
+	},
+	"item": [
+		{
+			"name": "Giphy",
+			"item": [
+				{
+					"name": "Trending Gifs",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.giphy.com/v1/gifs/trending?api_key=RR1ZeGzLg61LBCYyGmKFoL6SJ1aBSmr3",
+							"protocol": "https",
+							"host": [
+								"api",
+								"giphy",
+								"com"
+							],
+							"path": [
+								"v1",
+								"gifs",
+								"trending"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "RR1ZeGzLg61LBCYyGmKFoL6SJ1aBSmr3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rick And Morty",
+			"item": [
+				{
+					"name": "Character",
+					"item": [
+						{
+							"name": "Characters",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/character",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"character"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Character",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/character/2",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"character",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Multiple Characters",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/character/1,183",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"character",
+										"1,183"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Filter Character",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/character/?name=rick&status=alive",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"character",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "rick"
+										},
+										{
+											"key": "status",
+											"value": "alive"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Location",
+					"item": [
+						{
+							"name": "Locations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/location",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"location"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Location",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/location/3",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"location",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Multiple Locations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/location/3,21",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"location",
+										"3,21"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Episode",
+					"item": [
+						{
+							"name": "Episodes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/episode",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"episode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Episode",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/episode/28",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"episode",
+										"28"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Multiple Episode",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://rickandmortyapi.com/api/episode/10,28",
+									"protocol": "https",
+									"host": [
+										"rickandmortyapi",
+										"com"
+									],
+									"path": [
+										"api",
+										"episode",
+										"10,28"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Football",
+			"item": [
+				{
+					"name": "Leagues",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-RapidAPI-Key",
+								"value": "64e58eac34dd0145e707f36cf25824d8",
+								"type": "text"
+							},
+							{
+								"key": "X-RapidAPI-Host",
+								"value": "x-rapidapi-host",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://v3.football.api-sports.io/leagues",
+							"protocol": "https",
+							"host": [
+								"v3",
+								"football",
+								"api-sports",
+								"io"
+							],
+							"path": [
+								"leagues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coffe",
+			"item": [
+				{
+					"name": "Hot",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.sampleapis.com/coffee/hot",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sampleapis",
+								"com"
+							],
+							"path": [
+								"coffee",
+								"hot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Random users",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://randomuser.me/api?results=20&nat=us",
+							"protocol": "https",
+							"host": [
+								"randomuser",
+								"me"
+							],
+							"path": [
+								"api"
+							],
+							"query": [
+								{
+									"key": "results",
+									"value": "20"
+								},
+								{
+									"key": "nat",
+									"value": "us"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

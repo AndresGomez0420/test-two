@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "ef31f13b-b029-42d6-b7fb-72f9de9de53c",
+		"name": "mis peticiones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39583594"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/rick-and-morty/api/save-user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": null,\n  \"image\": \"https://i.pinimg.com/736x/4b/bd/0b/4bbd0b2a3fba56cfecd7d00addeaad2b.jpg\",\n  \"name\": \"pruebas\",\n  \"status\": \"male\",\n  \"species\": \"male\",\n  \"type\": \"agua\",\n  \"gender\": \"female\",\n  \"origin\": \"mar\",\n  \"location\": \"male\",\n  \"episode\": [\"hola\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/rick-and-morty/api/save-user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/rick-and-morty/api/character",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/rick-and-morty/api/character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/rick-and-morty/api/characters/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"image\": \"https://rickandmortyapi.com/api/character/avatar/1.jpeg\",\n  \"name\": \"Rick Sanchez\",\n  \"status\": \"male\",\n  \"species\": \"female\",\n  \"type\": \"agua\",\n  \"gender\": \"male\",\n  \"origin\": \"mar\",\n  \"location\": \"male\",\n  \"episode\": [\"https://rickandmortyapi.com/api/episode/1\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/rick-and-morty/api/characters/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/rick-and-morty/api/delete/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/rick-and-morty/api/delete/1"
+			},
+			"response": []
+		}
+	]
+}
